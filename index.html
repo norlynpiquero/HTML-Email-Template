@@ -1,0 +1,294 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Clone HTML Email</title>
+	<style type="text/css">
+		body {
+			Margin: 0;
+			padding: 0;
+			background-color: #f6f9fc;
+		}
+		table {
+			border-spacing: 0;
+		}
+		td {
+			padding: 0;
+		}
+		img {
+			border: 0;
+		}
+
+		.wrapper {
+			width: 100%;
+			table-layout: fixed;
+			background-color: #f6f9fc;
+			padding-bottom: 40px;
+		}
+
+		.webkit {
+			max-width: 600px;
+			background-color: #ffffff;
+		}
+
+		.outer {
+			Margin: 0 auto;
+			width: 100%;
+			max-width: 600px;
+			border-spacing: 0;
+			font-family: sans-serif;
+			color: #4a4a4a;
+		}
+
+		.three-columns {
+			text-align: center;
+			font-size: 0; /*for outlook compatibility*/
+			line-height: 0; /*for outlook compatibility*/
+			padding-top: 40px;
+			padding-bottom: 30px;
+		}
+
+		.three-columns .column {
+			width: 100%;
+			max-width: 200px;
+
+			/* important to make them align beside each other */
+			display: inline-block; 
+			vertical-align: top;
+		}
+
+		.three-columns .padding {
+			padding: 15px;
+		}
+
+		.three-columns .content {
+			font-size: 15px;
+			line-height: 20px;
+		}
+
+		a {
+			text-decoration: none;
+			color: red;
+			font-size: 16px;
+		}
+
+
+		@media screen and (max-width: 600px) { 
+			img.third-img {
+				width: 200px!important;
+				max-width: 200px!important;
+			}
+
+			.padding {
+				padding-right: 0!important;
+				padding-left: 0!important;
+			}
+
+			.three-columns {
+				display: block;
+				width: 100%;
+			}
+
+			.three-columns .column {
+				width: 100%;
+				max-width: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+		@media screen and (max-width: 400px) { 
+			img.third-img {
+				width: 200px!important;
+				max-width: 200px!important;
+			}
+
+			.padding {
+				padding-right: 0!important;
+				padding-left: 0!important;
+			}
+
+			.three-columns {
+				display: block;
+				width: 100%;
+			}
+
+			.three-columns .column {
+				width: 100%;
+				max-width: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+	</style>
+</head>
+<body>
+	<center class="wrapper">
+		<div class="webkit">
+			<table class="outer" align="center">
+
+				<!-- First section / Logo Section-->
+				<tr>
+					<td>
+						<table width="100%" style="border-spacing: 0;">
+							<tr>
+								<td style="background-color: rgba(0,0,0,0.60);padding: 10px;text-align: center;"><a style="text-decoration: none;color: white;font-size:30px;" href="norlynwebservices.com" title="Logo" alt="logo">HTML Email Template</a></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<!-- Banner Section -->
+				<tr>
+					<td>
+						<a href="norlynwebservices.com"><img width="600px" style="max-width: 100%;"src="./img/cover-img.jpg" alt="Banner Image"></a></td>
+				</tr>
+
+				<!-- Three-column Section -->
+				<tr>
+					<td>
+						<table width="100%" style="border-spacing: 0;">
+
+							<!-- wraps the three-column -->
+							<tr>
+								<td class="three-columns">
+
+									<!-- outer container for the table that has the content -->
+									<table class="column">
+										<tr>
+											<td class="padding">
+
+												<!-- finally the tables that has content -->
+												<table class="content">
+													<tr>
+														<td><a href="#"><img class="third-img" width="150" style="max-width: 150px;" src="./img/sample-img.jpg" alt="Product-img"></a></td>
+													</tr>
+
+													<tr>
+														<td style="padding: 10px;">
+															<p style="font-size: 17px;font-weight: bold;">RUNNING SHOES</p>
+															<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad neque aut placeat obcaecati est.</p>
+															<a href="#">Shop now!</a>
+														</td>
+													</tr>
+												</table>
+
+		
+											</td>
+										</tr>
+									</table>
+
+									<table class="column">
+										<tr>
+											<td class="padding">
+
+												<!-- finally the tables that has content -->
+												<table class="content">
+													<tr>
+														<td><a href="#"><img class="third-img" width="150px" style="max-width: 150px;" src="./img/sample-img.jpg" alt="Product-img"></a></td>
+													</tr>
+
+													<tr>
+														<td style="padding: 10px;">
+															<p style="font-size: 17px;font-weight: bold;">RUNNING SHOES</p>
+															<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad neque aut placeat obcaecati est.</p>
+															<a href="#">Shop now!</a>
+														</td>
+													</tr>
+												</table>
+
+		
+											</td>
+										</tr>
+									</table>
+
+									<table class="column">
+										<tr>
+											<td class="padding">
+
+												<!-- finally the tables that has content -->
+												<table class="content">
+													<tr>
+														<td><a href="#"><img class="third-img" width="150px" style="max-width: 150px;" src="./img/sample-img.jpg" alt="Product-img"></a></td>
+													</tr>
+
+													<tr>
+														<td style="padding: 10px;">
+															<p style="font-size: 17px;font-weight: bold;">RUNNING SHOES</p>
+															<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad neque aut placeat obcaecati est.</p>
+															<a href="#">Shop now!</a>
+														</td>
+													</tr>
+												</table>
+
+		
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<!-- Social Media Section -->
+				<tr>
+					<td>
+						<table width="100%" style="border-spacing: 0;">
+							<tr>
+								<td style="background: rgba(0,0,0,0.60);text-align: center;padding: 15px;">
+								<p style="font-size: 18px;color: #ffffff;Margin-bottom: 13px;">
+								Connect with us</p>
+								<a href="#"><img src="./img/white-facebook.png" width="30" alt=""></a>
+								<a href="#"><img src="./img/white-twitter.png" width="30" alt=""></a>
+								<a href="#"><img src="./img/white-youtube.png" width="30" alt=""></a>
+								<a href="#"><img src="./img/white-linkedin.png" width="30" alt=""></a>
+								<a href="#"><img src="./img/white-instagram.png" width="30" alt=""></a>
+							</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<!-- Footer -->
+				<tr>
+					<td style="background: #efefef;"> 
+						<table width="100%" style="border-spacing: 0;">
+
+							<tr>
+								<td style="padding: 20px;text-align: center;padding-bottom:10px;">
+									<a style="color: rgba(0,0,0,0.60);font-size: 18px;font-weight: 600;"href="www.norlynwebservices.com">
+										<p>Norlyn Piquero</p>
+									</a>
+									<p style="font-size: 16px;Margin-top:18px;Margin-bottom:10px;">Clone HTML Email Template</p>
+									<p style="font-size: 16px;Margin-bottom:10px;">Mandaue City Cebu, Philippines 6014</p>
+									<p><a href="mailto:norlyn.piquero@gmail.com">norlyn.piquero@gmail.com</a></p>
+									<p><a href="tel:+639382243391">+63 9 38 224 3391</a></p>
+								</td>
+							</tr>
+
+							<tr>
+								<td align="center" style="padding-bottom: 25px;text-align: center;">
+									
+									<p><a href="#" style="font-size: 13px;">UNSUBSCRIBE</a></p>
+
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<!-- Bottom most section -->
+				<tr>
+					<td height="20" style="background: rgba(0,0,0,0.60);"></td>
+				</tr>
+			</table>
+		</div>
+	</center>
+</body>
+</html>
